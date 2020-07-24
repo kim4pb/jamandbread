@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+        <div class="page-header">
+            <h1><a href="/">나와 닮은 위인 찾기</a></h1>
+        </div>
+        <div class="post">        
+            {% if question3 %}
+            <br>
+            <div class="crop">
+                <img src="{{ question3.img_link }}" alt="{{ question3.img_alt }}" width=500px height=auto;>
+            </div>
+            <div class="question"> 
+                <h1>{{ question3.title }}</h1>
+            </div>
+            <br><br>
+            <a href="{% url 'question4' %}"><button class="choiceA btn btn-default">A. {{ question3.text_a }}</button></a> 
+            <br><br>
+            <a href="{% url 'question4' %}" ><button class="choiceB btn btn-default">B. {{ question3.text_b }}</button></a>
+        
+            {% endif %}
+        </div>
+{% endblock %}
