@@ -1,0 +1,83 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+        <div class="page-header">
+            <h1><a href="/">나혜석</a></h1>
+        </div>
+        <div class="post">
+            <!-- <div class="crop">
+                <img src="nahyesuk.jpeg" alt="나혜석" width=500px height=auto;>
+            </div>         -->
+            {% if info_detail %}
+            <br>
+            <!-- <div class="crop">
+                <img src="{{ info_detail.img_link }}" alt="{{ info_detail.img_alt }}" width=500px height=auto;>
+            </div> -->
+            <div class="result">
+                <!-- <h1>{{ info_detail.title }}</h1> -->
+                <br>
+                <p>"{{ info_detail.text_a }}"</p>
+                <br>
+                <p>{{ info_detail.text_b }}</p>
+                <br>
+                <h2>{{ info_detail.title }}의 생애</h2>
+                <br>
+                <!-- <p>{{ info_detail.text_c }}</p> -->
+                <!-- <p>1914 도쿄 유학생 잡지 『학지광』에 「이상적 부인」발표</p>
+                <p>1918 『여자계』에 단편소설 「경희」 발표</p>
+                <p>1918 미술학교 졸업, 서울로 돌아와 정신여학교 미술교사</p>
+                <p>1919 3.1운동 참가, 5개월간 옥고를 치룸</p>
+                <p>1921 경성일보사 내청각(來靑閣)에서 첫 유화 개인전 개최</p>
+                <p>1921 제1회 서화협회전람회에 홍일점으로 유화 출품</p>
+                <p>1922~ 조선미술전람회 서양화부에 해마다 작품을 출품, 수상과 특선을 거듭</p>
+                <p>1927 만주 안동현(安東縣) 부영사로 일본 정부 외교관 신분이던 남편 김우영(金雨英)과 함께 세계 일주 여행에 올라 파리에서 약 8개월간 머무르면서 야수파 화가 비시에르(Roger Bissière, 1888∼1964)의 화실에서 그림을 공부</p>
+                <p>1931 도쿄의 제국미술원전람회 입선</p>
+                <p>1933 종로구 수송동에 여자미술학사를 설립</p>
+                <p>1934 『삼천리』에 「이혼고백서」를 발표하여 사회적 논란을 불러일으키고 최린에게 정조유린에 대한 위자료를 청구하는 소송을 제기</p>
+                <p>1936 소설 「현숙」발표</p>
+                <p>1937 소설 「어머니와 딸」발표</p> -->
+                <table>
+                <tr><td>1914</td> <td>도쿄 유학생 잡지 『학지광』에 「이상적 부인」발표</td></tr>
+                <tr><td>1918</td> <td>『여자계』에 단편소설 「경희」 발표</td></tr>
+                <tr><td>1918</td> <td>미술학교 졸업, 서울로 돌아와 정신여학교 미술교사</td></tr>
+                <tr><td>1919</td> <td>3.1운동 참가, 5개월간 옥고를 치룸</td></tr>
+                <tr><td>1921</td> <td>경성일보사 내청각(來靑閣)에서 첫 유화 개인전 개최</td></tr>
+                <tr><td>1921</td> <td>제1회 서화협회전람회에 홍일점으로 유화 출품</td></tr>
+                <tr><td>1922~</td> <td>조선미술전람회 서양화부에 해마다 작품을 출품, 수상과 특선을 거듭</td></tr>
+                <tr><td>1927</td> <td>만주 안동현(安東縣) 부영사로 일본 정부 외교관 신분이던 남편 김우영(金雨英)과 함께 세계 일주 여행에 올라 파리에서 약 8개월간 머무르면서 야수파 화가 비시에르(Roger Bissière, 1888∼1964)의 화실에서 그림을 공부</td></tr>
+                <tr><td>1931</td> <td>도쿄의 제국미술원전람회 입선</td></tr>
+                <tr><td>1933</td> <td>종로구 수송동에 여자미술학사를 설립</td></tr>
+                <tr><td>1934</td> <td>『삼천리』에 「이혼고백서」를 발표하여 사회적 논란을 불러일으키고 최린에게 정조유린에 대한 위자료를 청구하는 소송을 제기</td></tr>
+                <tr><td>1936</td> <td>소설 「현숙」발표</td></tr>
+                <tr><td>1937</td> <td>소설 「어머니와 딸」발표</td></tr>
+                </table>
+                <br>
+                <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F45cddfdd-885e-4cfa-a044-8750310091df%2FUntitled.png?table=block&id=46ce2fd5-f6b0-44cd-9052-83d50c634331&width=1230&userId=451af72e-7ce5-4224-9d94-191da8fb4078&cache=v2" alt="나혜석 작품" width=500px height=auto;>
+                <p>Dancers</p>
+                <br>
+                <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F874807b2-91ac-4326-aa61-2a419a3d71c4%2FUntitled.png?table=block&id=9c26de08-b67d-4c9b-9f61-d4d6f39e757a&width=740&userId=451af72e-7ce5-4224-9d94-191da8fb4078&cache=v2" alt="나혜석 작품" width=500px height=auto;>
+                <p>Habor in Spain</p>
+                <br>
+                <h2>{{ info_detail.title }}의 명언</h2>
+                <br>
+                <!-- <p>{{ info_detail.text_d }}</p> -->
+                <p>"정조는 도덕도 법률도 진리도 아니고 오직 취미일 뿐이다."</p>
+                <p>"현모양처는 이상을 정할 것도, 반드시 가져야 할 바도 아니다. 여자를 노예로 만들기 위하여 부덕을 장려한 것이다."</p>
+                <p>"일생을 두고 지금과 같이 나를 사랑해 주시오. 그림 그리는 것을 방해하지 마시오. 시어머니와 전실 딸과는 별거케 하여 주시오."</p>
+                <p>"여자도 사람이다. 여자라는 것보다 먼저 사람이다. 또 조선 사회의 여자보다 먼저 우주 안, 전 인류의 여성이다."</p>
+                <p>"내 몸이 제일 소중하다."</p>
+                <p>“여자도 사람답게 살아야 한다.”</p>
+                <p>"여성도 인간이외다"</p>
+                <p>"조선여자도 사람될 욕심을 가져야겠소."</p>
+                <p>“남자들은 왜 여자한테만 정조를 요구하고 자신들은 정조를 지키지 않는가.”</p>
+                <br>
+                <p></p><a href= ><button class="sns">결과 공유하기</button></a></p>
+                <br>
+                <br>
+            </div>
+            {% endif %}
+            
+            
+            
+        </div>
+{% endblock %}
