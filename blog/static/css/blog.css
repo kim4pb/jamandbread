@@ -58,8 +58,10 @@ h1, h2, h3, h4 {
 }
 
 .crop img {
-    width: 500px;
-    height: auto;
+    /* width: 500px; */
+    /* height: auto; */
+    width: auto;
+    height: 500px;
     /* margin: -75px 0 0 -100px; */
     
 }

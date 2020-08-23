@@ -11,6 +11,8 @@ class Post(models.Model):
     img_alt = models.CharField(max_length=200)
     text_a = models.TextField()
     text_b = models.TextField()
+    text_c = models.TextField()
+    text_d = models.TextField()
     # created_date = models.DateTimeField(
     #         default=timezone.now)
     # published_date = models.DateTimeField(

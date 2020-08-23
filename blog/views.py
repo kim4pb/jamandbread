@@ -23,3 +23,7 @@ def question4(request):
 def result(request):
     result = Post.objects.get(index=11)
     return render(request, 'blog/result.html', {'result':result})
+
+def info_detail(request):
+    info_detail = Post.objects.get(index=101)
+    return render(request, 'blog/info_detail.html', {'info_detail':info_detail})
