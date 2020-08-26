@@ -7,7 +7,7 @@
         <div class="post">        
             {% if result %}
             <br>
-            <div class="crop">
+            <div class="crop_square">
                 <img src="{{ result.img_link }}" alt="{{ result.img_alt }}" width=500px height=auto;>
             </div>
             <div class="result">
@@ -17,10 +17,12 @@
                 <br>
                 <p>{{ result.text_b }}</p>
                 <br>
-                <p><a href="{% url 'info_detail' %}" >나와 닮은 위인, 남자현에 대해 더 알아보고 싶다면?</a></p>
-                <p><a href="{% url 'info_detail' %}" >남자현과 잘 어울리는 친구, "할말하않"은 없는 예술가 나혜석</a></p>
+                <p><a href="{% url 'info_detail' %}" >나와 닮은 위인, 나혜석에 대해 더 알아보고 싶다면?</a></p>
+                <!-- <p><a href="{% url 'info_detail' %}" >남자현과 잘 어울리는 친구, "할말하않"은 없는 예술가 나혜석</a></p> -->
                 <br>
                 <p></p><a href= ><button class="sns">결과 공유하기</button></a></p>
+                <br>
+                <br>
             </div>
             {% endif %}
             
