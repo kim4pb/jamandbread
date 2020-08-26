@@ -1,11 +1,12 @@
 .page-header {
-    background-color: #ff9400;
+    /* background-color: #ff9400; */
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #414141;
     font-size: 36pt;
     text-decoration: none;
     /* margin-left: 40px; */
@@ -47,6 +48,24 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
+.main {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    align-content: "center"; 
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main img {
+    /* width: 500px;
+    height: auto; */
+    position:relative;
+    left:-25%;
+    /* margin: -75px 0 0 -100px; */
+    
+}
 .crop {
     width: 500px;
     height: 300px;
@@ -58,12 +77,25 @@ h1, h2, h3, h4 {
 }
 
 .crop img {
-    /* width: 500px; */
-    /* height: auto; */
-    width: auto;
-    height: 500px;
+    width: 500px;
+    height: auto;
     /* margin: -75px 0 0 -100px; */
     
+}
+
+.crop_square {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    align-content: "center"; 
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crop_square img {
+    width: auto;
+    height: 500px;
 }
 
 .question {

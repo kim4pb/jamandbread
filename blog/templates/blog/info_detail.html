@@ -2,7 +2,7 @@
 
 {% block content %}
         <div class="page-header">
-            <h1><a href="/">나혜석</a></h1>
+            <!-- <h1><a href="/">나혜석</a></h1> -->
         </div>
         <div class="post">
             <!-- <div class="crop">
@@ -10,7 +10,7 @@
             </div>         -->
             {% if info_detail %}
             <br>
-            <div class="crop">
+            <div class="crop_square">
                 <img src="https://postfiles.pstatic.net/MjAyMDA4MjRfNDMg/MDAxNTk4MjczMDg5NTA3.1p3zEwwlywNHqQXrj010cLZ3zirj6DaSnsUOFkeFcaYg.dHAjKk7qD7OAfkIjNu9UjY6oOt35Ek4WH-pU8RelN2sg.JPEG.jamandbread-official/nahyesuk.jpeg?type=w966" alt="나혜석" width=500px height=auto;>
             </div>
             <div class="result">
@@ -73,6 +73,9 @@
                 <p>"여성도 인간이외다"</p>
                 <p>"조선여자도 사람될 욕심을 가져야겠소."</p>
                 <p>“남자들은 왜 여자한테만 정조를 요구하고 자신들은 정조를 지키지 않는가.”</p>
+                <br>
+                <br>
+                <p><a href="{% url 'info_detail' %}" >나혜석만큼 멋진 다른 위인들에 대해서도 알아보고 싶다면?</a></p>
                 <br>
                 <p></p><a href= ><button class="sns">결과 공유하기</button></a></p>
                 <br>
