@@ -48,7 +48,43 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
+.main {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    align-content: "center"; 
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main img {
+    /* width: 500px; */
+    /* height: auto; */
+    position: relative;
+    left: -25%;
+    /* margin: -75px 0 0 -100px; */
+    
+}
+
 .crop {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    align-content: "center"; 
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crop img {
+    width: 500px;
+    height: auto;
+    /* margin: -75px 0 0 -100px; */
+    
+}
+
+.crop_square {
     width: 500px;
     height: 500px;
     overflow: hidden;
@@ -58,15 +94,12 @@ h1, h2, h3, h4 {
     margin-right: auto;
 }
 
-.crop img {
-    /* width: 500px; */
-    /* height: auto; */
+.crop_square img {
     width: auto;
     height: 500px;
     /* margin: -75px 0 0 -100px; */
     
 }
-
 .question {
     /* padding-left: 300px; */
     width: 520px;
